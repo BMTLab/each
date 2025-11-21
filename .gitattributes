@@ -1,1 +1,15 @@
-*.py text eol=lf 
+# Use LF for all text files in this (Unix-oriented) project
+* text=auto eol=lf
+
+# Shell scripts
+*.sh   text eol=lf
+*.bash text eol=lf
+*.zsh  text eol=lf
+
+# Python scripts
+*.py   text eol=lf
+
+# Docs / metadata
+*.md    text eol=lf diff=markdown
+*.txt   text eol=lf
+LICENSE text eol=lf
