@@ -1,24 +1,61 @@
+# OS / filesystem noise
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Icon?
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+*~
+.#*
+.nfs*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Shell history / local stuff
+.bash_history
+.zsh_history
+*.local
+*.local.sh
+
 # Python
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Packaging / build artifacts
-build/
-dist/
-*.egg-info/
-
-# Virtual environments (на будущее)
+# Virtual environments
 .venv/
 venv/
 .env/
 
-# IDE / editors
-.idea/
-.vscode/
-*.swp
+# Runtime / temp files
+tmp/
+temp/
+*.tmp
+*.log
+*.cache
+cache/
+*.bak
+*.old
 
-# OS junk
-.DS_Store
-Thumbs.db
- 
+# Environment / secrets
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# Tool outputs
+dist/
+build/
+out/
+coverage/
+reports/
