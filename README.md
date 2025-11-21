@@ -3,11 +3,10 @@
 A small, single-file CLI tool that runs a shell command once per input token, 
 replacing an explicit placeholder (such as `{}` or `{FILE}`) with each token.
 
-It plays a similar role to `xargs`, but aims to be:
-
-* more explicit (no guessing about where arguments go),
-* safer by default (shell quoting enabled unless you opt out),
-* more ergonomic for line-, delimiter-, or NUL-separated inputs.
+> It plays a similar role to `xargs`, but aims to be:
+> * more explicit (no guessing about where arguments go),
+> * safer by default (shell quoting enabled unless you opt out),
+> * more ergonomic for line-, delimiter-, or NUL-separated inputs.
 
 ---
 
@@ -298,8 +297,7 @@ This can be useful if your system defaults to a different shell, and you rely on
 
 * It will run **exactly** the commands you ask it to run.
 * By default, tokens are shell-quoted, which protects against many common issues with spaces and simple metacharacters.
-* If you disable quoting (`--no-quote`), you are fully responsible for ensuring that inputs
-are safe and properly escaped.
+* If you disable quoting (`--no-quote`), you are fully responsible for ensuring that inputs are safe and properly escaped.
 
 > [!WARNING]
 > Do **not** use `each` with untrusted input when the command template can modify or delete data.
