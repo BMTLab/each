@@ -1,0 +1,4 @@
+# Recommended by GitHub best practices to have a Code Owner defined especially for .github folder
+# NOTE: Order is important; the last matching pattern takes the most precedence.
+
+* @BMTLab

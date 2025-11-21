@@ -1,0 +1,22 @@
+name: "🎁 Feature request"
+description: Suggest a new feature/enhancement!
+labels: ['enhancement']
+assignees:
+  - BMTLab
+title: '[Feature]: '
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: What would you like to be added?
+      description: >-
+        Please check existing issues to avoid making duplicates.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Why is this needed?
+    validations:
+      required: true
