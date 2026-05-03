@@ -146,9 +146,9 @@ with the (optionally quoted) token, and the resulting command is executed.
 
 | Option                | Type                   | Default        | Description                                                                         |
 | --------------------- | ---------------------- | -------------- | ----------------------------------------------------------------------------------- |
-| `command`             | positional             | —              | Shell command template containing the placeholder (default `{}`).                   |
+| `command`             | positional             |:              | Shell command template containing the placeholder (default `{}`).                   |
 | `-p`, `--placeholder` | string                 | `{}`           | Placeholder substring to replace with each token.                                   |
-| `-d`, `--delimiter`   | repeatable string      | —              | Literal delimiter(s) for splitting input (see below).                               |
+| `-d`, `--delimiter`   | repeatable string      |:              | Literal delimiter(s) for splitting input (see below).                               |
 | `-0`, `--null`        | flag                   | `False`        | Treat input as NUL-delimited (`\0`), like `xargs -0`.                               |
 | `--strip`             | flag                   | `False`        | Strip leading/trailing whitespace from each token.                                  |
 | `--keep-empty`        | flag                   | `False`        | Keep empty tokens (by default they are dropped).                                    |
@@ -159,7 +159,7 @@ with the (optionally quoted) token, and the resulting command is executed.
 | `--dry-run`           | flag                   | `False`        | Do not execute anything; just print the final command per token.                    |
 | `-t`, `--trace`       | flag                   | `False`        | Print commands before executing them (like `xargs -t`).                             |
 | `--no-quote`          | flag                   | `False`        | Insert tokens as-is instead of quoting them for the shell.                          |
-| `--env`               | repeatable `KEY=VALUE` | —              | Add or override environment variables for child processes.                          |
+| `--env`               | repeatable `KEY=VALUE` |:              | Add or override environment variables for child processes.                          |
 | `--shell`             | string                 | system default | Path to the shell executable (e.g., `/bin/bash`).                                   |
 
 > [!TIP]
